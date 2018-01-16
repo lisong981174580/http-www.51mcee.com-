@@ -1,0 +1,718 @@
+/*header从此开始*/
+header {
+  width: 100%;
+  min-width: 1200px;
+  height: 50px;
+  background: #1e2339;
+}
+header main {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 50px;
+}
+header main .header-left {
+  float: left;
+}
+header main .header-left .logo,
+header main .header-left .lg-title,
+header main .header-left .sm-title {
+  float: left;
+}
+header main .header-left .logo {
+  width: 106px;
+  height: 34px;
+  margin-top: 8px;
+  margin-right: 75px;
+}
+header main .header-left .logo img {
+  width: 106px;
+  height: 34px;
+  display: block;
+}
+header main .header-left .sm-title {
+  font-size: 14px;
+  color: #fff;
+}
+header main .header-right {
+  float: right;
+  width: 58px;
+  height: 28px;
+  border: 1px solid #4e525d;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 11px;
+  box-sizing: border-box;
+}
+header main .header-right a {
+  color: #f0f0f2;
+  font-size: 14px;
+}
+header main .header-right:hover {
+  background: #535761;
+}
+/*header从此结束*/
+/*导航从此开始*/
+nav {
+  width: 100%;
+  min-width: 1200px;
+  height: 62px;
+  background: #0d1039;
+  border-top: 1px solid #0d1039;
+}
+nav .index-nav {
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+}
+nav .index-nav li {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  padding: 0  20px;
+  box-sizing: border-box;
+  position: relative;
+}
+nav .index-nav li > a {
+  font-size: 14px;
+}
+nav .index-nav li .drop {
+  position: absolute;
+  z-index: 10;
+  height: auto;
+  width: 140px;
+  left: 0;
+  background: #171b2b;
+  overflow: hidden;
+  display: none;
+}
+nav .index-nav li .drop ol > li {
+  width: 100%;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  position: relative;
+}
+nav .index-nav li .drop ol > li .title-icon {
+  position: absolute;
+  left: 30px;
+  top: 12px;
+  width: 18px;
+  height: 18px;
+}
+nav .index-nav li .drop ol > li .title-icon .img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+nav .index-nav li .drop ol > li .title-icon .hover-img {
+  display: none;
+}
+nav .index-nav li .drop ol > li a {
+  font-size: 12px;
+  margin-left: 35px;
+}
+nav .index-nav li .drop ol > li:hover a {
+  color: #009df3;
+}
+nav .index-nav li a {
+  color: #fff;
+}
+nav .index-nav li:hover a:first-child {
+  color: #009df3;
+}
+/*导航从此结束*/
+/*表单部分从此开始*/
+.body {
+  width: 100%;
+  height: 812px;
+  background: url(../images/demand-bg_02.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.body .body-mask {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.62;
+  z-index: 1;
+}
+.body main {
+  width: 1200px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  z-index: 2;
+}
+.body main form .form-scene1 {
+  width: 446px;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 130px;
+  overflow: hidden;
+  z-index: 6;
+}
+.body main form .form-scene1 .form-title {
+  width: 100%;
+  text-align: left;
+  padding-left: 114px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 9px;
+  position: relative;
+  margin-bottom: 46px;
+}
+.body main form .form-scene1 .form-title .form-sort-box {
+  position: absolute;
+  width: 43px;
+  height: 38px;
+  left: 90px;
+  top: 0;
+}
+.body main form .form-scene1 .form-title .form-sort-box .form-sort {
+  position: absolute;
+  width: 1px;
+  height: 54px;
+  background: #fff;
+  transform: rotate(45deg);
+  right: 22px;
+  top: -9px;
+}
+.body main form .form-scene1 .form-title .form-sort-box .form-sort-num {
+  position: absolute;
+  font-size: 26px;
+  left: -4px;
+  top: 0;
+}
+.body main form .form-scene1 .form-group {
+  width: 100%;
+  height: 36px;
+  padding-left: 28px;
+  margin-bottom: 20px;
+}
+.body main form .form-scene1 .form-group label {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 21px;
+  float: left;
+}
+.body main form .form-scene1 .form-group .input-box {
+  float: left;
+  position: relative;
+  border: 1px solid #fff;
+  width: 328px;
+  height: 36px;
+}
+.body main form .form-scene1 .form-group .input-box input {
+  width: 100%;
+  height: 34px;
+  background: none;
+  padding-left: 20px;
+  color: #999999;
+  font-size: 14px;
+  border: 0;
+  outline: none;
+}
+.body main form .form-scene1 .form-group .input-box .option-box {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 37px;
+  background: #5e5e5f;
+  padding: 2px 0;
+  z-index: 10;
+  display: none;
+}
+.body main form .form-scene1 .form-group .input-box .option-box li {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #fff;
+  background: #5e5e5f;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.body main form .form-scene1 .form-group .input-box .option-box li:hover {
+  background: #549af5;
+}
+.body main form .form-scene1 .form-group .input-box .input-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 5px  solid  #cccccc;
+  border-right: 5px solid   transparent;
+  border-bottom: 5px  solid   transparent;
+  border-left: 5px  solid  transparent;
+  right: 14px;
+  top: 15px;
+}
+.body main form .form-scene1 .form-radio {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.body main form .form-scene1 .form-radio label {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 21px;
+  float: left;
+}
+.body main form .form-scene1 .form-radio .radio-box {
+  width: 328px;
+  float: left;
+  padding-top: 10px;
+}
+.body main form .form-scene1 .form-radio .radio-box .radio-box-top {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+.body main form .form-scene1 .form-radio .radio-box .radio-box-top li {
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+.body main form .form-scene1 .form-radio .radio-box .radio-box-top li .marquee {
+  float: left;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.body main form .form-scene1 .form-radio .radio-box .radio-box-top li span {
+  float: left;
+  color: #fff;
+  margin-right: 50px;
+  height: 16px;
+  line-height: 16px;
+}
+.body main form .form-scene1 .form-radio .radio-box .radio-box-top li .right {
+  position: absolute;
+  width: 14px;
+  height: 11px;
+  background: url(../images/right_03.png) no-repeat center center;
+  background-size: 14px;
+  left: 4px;
+  top: 0;
+  z-index: 30;
+  display: none;
+}
+.body main form .form-scene1 .form-radio .radio-box .radio-box-top li:last-child {
+  margin-right: 0;
+}
+.body main form .form-scene1 .form-radio .radio-box .radio-box-top li:last-child span {
+  margin-right: 0;
+}
+.body main form .form-scene1 .form-radio .radio-box .control-other {
+  width: 100%;
+  height: 34px;
+  background: none;
+  padding-left: 20px;
+  color: #999999;
+  font-size: 14px;
+  border: 1px solid #fff;
+  line-height: 32px;
+}
+.body main form .form-scene1 .form-monitor {
+  padding-left: 28px;
+  margin-bottom: 40px;
+}
+.body main form .form-scene1 .next-buttom {
+  width: 112px;
+  height: 34px;
+  background: #2277e6;
+  margin-left: 222px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.body main form .form-scene1 .next-buttom:hover {
+  background-color: #59a0fc;
+}
+.body main form .form-scene2 {
+  width: 420px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 130px;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 5;
+}
+.body main form .form-scene2 .form-title {
+  width: 100%;
+  text-align: left;
+  padding-left: 114px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 9px;
+  position: relative;
+  margin-bottom: 46px;
+}
+.body main form .form-scene2 .form-title .form-sort-box {
+  position: absolute;
+  width: 43px;
+  height: 38px;
+  left: 90px;
+  top: 0;
+}
+.body main form .form-scene2 .form-title .form-sort-box .form-sort {
+  position: absolute;
+  width: 1px;
+  height: 54px;
+  background: #fff;
+  transform: rotate(45deg);
+  right: 22px;
+  top: -9px;
+}
+.body main form .form-scene2 .form-title .form-sort-box .form-sort-num {
+  position: absolute;
+  font-size: 26px;
+  left: -4px;
+  top: 0;
+}
+.body main form .form-scene2 .form-group {
+  width: 100%;
+  height: 36px;
+  padding-left: 28px;
+  margin-bottom: 20px;
+}
+.body main form .form-scene2 .form-group label {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 21px;
+  float: left;
+}
+.body main form .form-scene2 .form-group .input-box {
+  float: left;
+  position: relative;
+  width: 328px;
+}
+.body main form .form-scene2 .form-group .input-box input {
+  width: 100%;
+  height: 34px;
+  background: none;
+  padding-left: 20px;
+  color: #999999;
+  font-size: 14px;
+  border: 1px solid #fff;
+}
+.body main form .form-scene2 .form-group-textarea {
+  height: 144px;
+}
+.body main form .form-scene2 .form-group-textarea textarea {
+  width: 100%;
+  height: 100%;
+  background: none;
+  padding-left: 20px;
+  color: #999999;
+  font-size: 14px;
+  border: 1px solid #fff;
+  padding-top: 11px;
+}
+.body main form .form-scene2 .form-group-textarea .form-scene2-footer {
+  width: 100%;
+  font-size: 14px;
+  color: #fff;
+  padding-top: 20px;
+  margin-bottom: 42px;
+}
+.body main form .form-scene2 .form-group-textarea input.submit {
+  background-color: #2277e6;
+  width: 112px;
+  height: 34px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+.body main form .form-scene2 .form-group-textarea input.submit:hover {
+  background: #549af5;
+}
+/*表单弹框部分*/
+.form-alert {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: none;
+}
+.form-alert .body-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  background-color: #000000;
+  opacity: 0.502;
+  z-index: 200;
+}
+.form-alert .form-alert-box {
+  width: 366px;
+  height: 238px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  z-index: 300;
+}
+.form-alert .form-alert-box .form-alert-box-top {
+  width: 100%;
+  height: 40px;
+  background-image: -moz-linear-gradient(0deg, #2277e6 0%, #2553e7 100%);
+  background-image: -webkit-linear-gradient(0deg, #2277e6 0%, #2553e7 100%);
+  background-image: -ms-linear-gradient(0deg, #2277e6 0%, #2553e7 100%);
+}
+.form-alert .form-alert-box .form-alert-box-top .Sigh {
+  width: 36px;
+  height: 40px;
+  background: url(../images/Sigh_06.jpg) no-repeat center center;
+  background-size: 36px;
+  float: left;
+}
+.form-alert .form-alert-box .form-alert-box-top span {
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  color: #fff;
+}
+.form-alert .form-alert-box .form-alert-box-top .cancel {
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 40px;
+  cursor: pointer;
+  float: right;
+}
+.form-alert .form-alert-box .form-alert-box-top .cancel:hover {
+  background: #4068ea;
+}
+.form-alert .form-alert-box .form-alert-box-bottom {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+}
+.form-alert .form-alert-box .form-alert-box-bottom p {
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.form-alert .form-alert-box .form-alert-box-bottom button {
+  background-color: #2277e6;
+  width: 112px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  border: 0;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+.form-alert .form-alert-box .form-alert-box-bottom button:hover {
+  background-color: #59a0fc;
+}
+/*表单状态部分*/
+.state .success {
+  width: 675px;
+  height: 110px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: 400;
+  display: none;
+}
+.state .success .icon {
+  width: 78px;
+  height: 110px;
+  background: url(../images/success_03.png) no-repeat center center;
+  background-size: 78px;
+  float: left;
+  margin-right: 30px;
+}
+.state .success span {
+  height: 78px;
+  line-height: 78px;
+  float: left;
+  font-size: 24px;
+  color: #fff;
+}
+.state .fail {
+  width: 570px;
+  height: 110px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: 400;
+  display: none;
+}
+.state .fail .icon {
+  width: 78px;
+  height: 110px;
+  background: url(../images/fail_03.png) no-repeat center center;
+  background-size: 78px;
+  float: left;
+  margin-right: 30px;
+}
+.state .fail span {
+  height: 78px;
+  line-height: 78px;
+  float: left;
+  font-size: 24px;
+  color: #fff;
+}
+/*表单部分从此结束*/
+/*底部从此开始*/
+footer {
+  width: 100%;
+  min-width: 1200px;
+  background: #2e3033;
+}
+footer main {
+  width: 1200px;
+  margin: 0 auto;
+  /*底部版权*/
+}
+footer main .footer-top {
+  width: 100%;
+  height: 222px;
+  padding-top: 40px;
+  padding-left: 55px;
+  padding-right: 47px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  /*关于我们*/
+}
+footer main .footer-top .footer-logo {
+  margin-right: 110px;
+}
+footer main .footer-top .footer-logo .footer-logo-top {
+  width: 134px;
+  height: 40px;
+  margin-bottom: 34px;
+}
+footer main .footer-top .footer-logo .footer-logo-top img {
+  width: 134px;
+  height: 40px;
+  display: block;
+}
+footer main .footer-top .footer-logo p {
+  font-size: 12px;
+  color: #fff;
+  line-height: 12px;
+  height: 12px;
+  margin-bottom: 12px;
+}
+footer main .footer-top .footer-logo .company-info {
+  width: 100%;
+  color: #fff;
+  line-height: 20px;
+  font-size: 12px;
+}
+footer main .footer-top .footer-about {
+  margin-right: 185px;
+}
+footer main .footer-top .footer-about h4 {
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  color: #fff;
+  margin-bottom: 38px;
+}
+footer main .footer-top .footer-about ul > li > a {
+  font-size: 12px;
+  line-height: 12px;
+  height: 12px;
+  color: #acadad;
+}
+footer main .footer-top .footer-about ul > li > .hover:hover {
+  color: #009df3;
+}
+footer main .footer-top .footer-about ul > li {
+  margin-bottom: 20px;
+}
+footer main .footer-top .footer-about:last-child {
+  margin-right: 0;
+}
+footer main .footer-buttom {
+  width: 100%;
+  height: 76px;
+}
+footer main .footer-buttom p {
+  padding-top: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-top: 1px solid #45484c;
+  font-size: 12px;
+  color: #cccccc;
+}
+/*返回顶部*/
+.top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 10px;
+  bottom: 60px;
+  display: none;
+}
+.top img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}

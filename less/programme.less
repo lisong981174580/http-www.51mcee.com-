@@ -1,0 +1,353 @@
+/*header从此开始*/
+header{
+  width: 100%;
+  min-width: 1200px;
+  height: 50px;
+  background: #1e2339;
+
+  main{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 50px;
+    .header-left{
+      float: left;
+      .logo,.lg-title,.sm-title{
+        float: left;
+      }
+      .logo{
+        width: 106px;
+        height: 34px;
+        margin-top: 8px;
+        margin-right: 75px;
+        img{
+          width: 106px;
+          height: 34px;
+          display: block;
+        }
+      }
+
+      .sm-title{
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+    .header-right{
+      float: right;
+      width: 58px;
+      height: 28px;
+      border: 1px solid #4e525d;
+      line-height: 28px;
+      text-align: center;
+      margin-top: 11px;
+      box-sizing: border-box;
+      a{
+        color: #f0f0f2;
+        font-size: 14px;
+      }
+    }
+
+    .header-right:hover{
+      background: #535761;
+    }
+  }
+}
+/*header从此结束*/
+/*导航从此开始*/
+nav{
+  width: 100%;
+  min-width: 1200px;
+  height: 62px;
+  background: #0d1039;
+  border-top: 1px solid #0d1039;
+  .index-nav{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    li{
+      float: left;
+      height: 60px;
+      line-height: 60px;
+      padding: 0  20px;
+      box-sizing: border-box;
+      position: relative;
+      >a{
+        font-size: 14px;
+      }
+      .drop{
+        position: absolute;
+        z-index: 10;
+        height: auto;
+        width: 140px;
+        left: 0;
+        background: #171b2b;
+        overflow: hidden;
+        display: none;
+        ol>li{
+          width: 100%;
+          color: #fff;
+          height: 40px;
+          line-height: 40px;
+          font-size: 12px;
+          position: relative;
+          .title-icon{
+            position: absolute;
+            left: 30px;
+            top:12px;
+            width: 18px;
+            height: 18px;
+            .img{
+              display: block;
+              width: 18px;
+              height: 18px;
+            }
+            .hover-img{
+              display: none;
+            }
+          }
+          a{
+            font-size: 12px;
+            margin-left: 35px;
+          }
+        }
+        ol>li:hover a{
+          color: rgb(0, 157, 243);
+        }
+      }
+      a{
+        color: #fff;
+      }
+    }
+    li:hover a:first-child{
+      color: rgb(0, 157, 243);
+    }
+  }
+}
+/*导航从此结束*/
+
+/*解决方案内容从此开始*/
+.programme_content{
+   width: 100%;
+  height: 900px;
+  main{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    .content_left{
+      width: 230px;
+      height:100%;
+      background: #fafbfc;
+      flex-shrink: 0;
+      border: 1px solid #e6e6e6;
+      h3{
+        text-align: center;
+         height: 58px;
+        line-height: 58px;
+        border-bottom: 1px solid #2277e6;
+        font-size: 18px;
+        color: #333333;
+      }
+      ul{
+        width: 100%;
+        height: auto;
+        >li{
+          padding-top: 30px;
+          padding-left: 20px;
+          border-bottom: 1px solid #e6e6e6;
+          padding-right: 20px;
+          .title{
+            height: 18px;
+            color: #333333;
+            margin-bottom: 20px;
+            .title_icon{
+              width: 19px;
+              height: 18px;
+              margin-right: 8px;
+              float: left;
+              img{
+                width: 19px;
+                height: 18px;
+                display: block;
+              }
+            }
+            span{
+              width: 100px;
+              height: 18px;
+              line-height: 18px;
+              font-size:14px ;
+              float: left;
+            }
+            .jiantou{
+              width: 11px;
+              height: 6px;
+              background: url(../images/jiantou_03.png) no-repeat center center;
+              background-size:11px;
+              margin-top: 7px;
+              float: right;
+            }
+          }
+          ol{
+            width: 100%;
+            height: auto;
+            li{
+              height: 14px;
+              line-height: 14px;
+              margin-bottom: 18px;
+              padding-left: 10px;
+              .li_style{
+                width: 8px;
+                height: 8px;
+                background: url(../images/li_style_03.jpg) no-repeat center center;
+                background-size: cover;
+                float: left;
+                margin-top: 2px;
+                margin-right: 9px;
+                opacity: 0;
+              }
+              a{
+                font-size: 12px;
+                color:#666 ;
+                float: left;
+              }
+            }
+            li:last-child{
+              margin-bottom: 30px;
+            }
+          }
+        }
+        >li:last-child{
+          border-bottom: 0;
+        }
+        >li:first-child  ol li:first-child {
+          .li_style {
+            opacity: 1;
+          }
+          a{
+            color:#2277e6;
+          }
+        }
+      }
+    }
+    .content_reight{
+      width: 970px;
+      flex-grow: 1;
+      flex-shrink: 0;
+      border: 0;
+      height: 100%;
+
+    }
+  }
+}
+/*解决方案内容从此结束*/
+
+
+/*底部从此开始*/
+footer{
+  width: 100%;
+  min-width: 1200px;
+  background: #2e3033;
+  main{
+    width: 1200px;
+    margin: 0 auto;
+    .footer-top{
+      width: 100%;
+      height: 222px;
+      padding-top: 40px;
+      padding-left: 55px;
+      padding-right: 47px;
+      display: flex;
+      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -webkit-flex;     /* NEW - Chrome */
+      display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      justify-content: space-between;
+      .footer-logo{
+        margin-right: 110px;
+        .footer-logo-top{
+          width: 134px;
+          height: 40px;
+          margin-bottom: 34px;
+
+          img{
+            width: 134px;
+            height: 40px;
+            display: block;
+          }
+
+        }
+
+        p{
+          font-size: 12px;
+          color: #fff;
+          line-height: 12px;
+          height: 12px;
+          margin-bottom: 12px;
+        }
+        .company-info{
+          width: 100%;
+          color: #fff;
+          line-height: 20px;
+          font-size: 12px;
+        }
+
+
+      }
+      /*关于我们*/
+      .footer-about{
+        margin-right: 185px;
+        h4{
+          font-size: 14px;
+          height: 14px;
+          line-height: 14px;
+          color: #fff;
+          margin-bottom: 38px;
+        }
+        ul>li>a{
+          font-size: 12px;
+          line-height: 12px;
+          height: 12px;
+          color: #acadad;
+        }
+
+        ul>li> .hover:hover{
+          color: #009df3;
+        }
+        ul>li{
+          margin-bottom: 20px;
+        }
+      }
+
+      .footer-about:last-child{
+        margin-right: 0;
+      }
+    }
+    /*底部版权*/
+    .footer-buttom{
+      width: 100%;
+      height: 76px;
+
+      p{
+        padding-top: 20px;
+        line-height: 20px;
+        text-align: center;
+        border-top: 1px solid #45484c;
+        font-size: 12px;
+        color: #cccccc;
+      }
+
+    }
+  }
+}
+
+
+
+

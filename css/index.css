@@ -1,0 +1,873 @@
+body {
+  background: #f2f2f4;
+}
+/*header从此开始*/
+header {
+  width: 100%;
+  min-width: 1200px;
+  height: 50px;
+  background: #1e2339;
+}
+header main {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 50px;
+}
+header main .header-left {
+  float: left;
+}
+header main .header-left .logo,
+header main .header-left .lg-title,
+header main .header-left .sm-title {
+  float: left;
+}
+header main .header-left .logo {
+  width: 106px;
+  height: 34px;
+  margin-top: 8px;
+  margin-right: 75px;
+}
+header main .header-left .logo img {
+  width: 106px;
+  height: 34px;
+  display: block;
+}
+header main .header-left .sm-title {
+  font-size: 14px;
+  color: #fff;
+}
+header main .header-right {
+  float: right;
+  width: 58px;
+  height: 28px;
+  border: 1px solid #4e525d;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 11px;
+  box-sizing: border-box;
+}
+header main .header-right a {
+  color: #f0f0f2;
+  font-size: 14px;
+}
+header main .header-right:hover {
+  background: #535761;
+}
+/*header从此结束*/
+/*导航从此开始*/
+nav {
+  width: 100%;
+  min-width: 1200px;
+  height: 62px;
+  background: #0d1039;
+  border-top: 1px solid #0d1039;
+}
+nav .index-nav {
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+}
+nav .index-nav li {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  padding: 0  20px;
+  box-sizing: border-box;
+  position: relative;
+}
+nav .index-nav li > a {
+  font-size: 14px;
+}
+nav .index-nav li .drop {
+  position: absolute;
+  z-index: 10;
+  height: auto;
+  width: 140px;
+  left: 0;
+  background: #171b2b;
+  overflow: hidden;
+  display: none;
+}
+nav .index-nav li .drop ol > li {
+  width: 100%;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  position: relative;
+}
+nav .index-nav li .drop ol > li .title-icon {
+  position: absolute;
+  left: 30px;
+  top: 12px;
+  width: 18px;
+  height: 18px;
+}
+nav .index-nav li .drop ol > li .title-icon .img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+nav .index-nav li .drop ol > li .title-icon .hover-img {
+  display: none;
+}
+nav .index-nav li .drop ol > li a {
+  font-size: 12px;
+  margin-left: 35px;
+}
+nav .index-nav li .drop ol > li:hover a {
+  color: #009df3;
+}
+nav .index-nav li a {
+  color: #fff;
+}
+nav .index-nav li:hover a:first-child {
+  color: #009df3;
+}
+/*导航从此结束*/
+/*定义的动画*/
+@keyframes myfirst {
+  0% {
+    bottom: -50px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@-moz-keyframes myfirst {
+  /* Firefox */
+  0% {
+    bottom: -50px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@-webkit-keyframes myfirst {
+  /* Safari and Chrome */
+  0% {
+    bottom: -50px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@-o-keyframes myfirst {
+  /* Opera */
+  0% {
+    bottom: -50px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+/*定义的动画结束*/
+/*banner从此开始*/
+.banner {
+  width: 100%;
+  min-width: 1200px;
+  height: 436px;
+  background: #0d1039;
+  position: relative;
+  overflow: hidden;
+}
+.banner .banner-box {
+  width: 1200px;
+  height: 436px;
+  margin: 0 auto;
+}
+.banner .banner-box li {
+  width: 100%;
+  height: 436px;
+  position: relative;
+}
+.banner .banner-box li .banner-left {
+  height: 352px;
+  position: absolute;
+  bottom: -100%;
+  left: 40px;
+  z-index: 2;
+  animation: myfirst 4s forwards;
+  -moz-animation: myfirst 4s forwards;
+  /* Firefox */
+  -webkit-animation: myfirst 4s forwards;
+  /* Safari and Chrome */
+  -o-animation: myfirst 4s forwards;
+  /* Opera */
+}
+.banner .banner-box li .banner-left h3 {
+  font-size: 40px;
+  line-height: 40px;
+  height: 40px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 66px;
+}
+.banner .banner-box li .banner-left h4 {
+  font-size: 24px;
+  line-height: 24px;
+  height: 24px;
+  color: #f9aa2d;
+  margin-bottom: 30px;
+}
+.banner .banner-box li .banner-left h4 span {
+  color: #ffffff;
+  font-size: 22px;
+}
+.banner .banner-box li .banner-img {
+  position: absolute;
+  right: 0;
+  bottom: -100%;
+  width: 784px;
+  height: 486px;
+  z-index: 1;
+  animation: myfirst 4s forwards;
+  -moz-animation: myfirst 4s forwards;
+  /* Firefox */
+  -webkit-animation: myfirst 4s forwards;
+  /* Safari and Chrome */
+  -o-animation: myfirst 4s forwards;
+  /* Opera */
+}
+.banner .banner-box li .banner-img img {
+  width: 784px;
+  height: 486px;
+  display: block;
+}
+/*banner从此结束*/
+/*平台分类从此开始  list*/
+.list {
+  width: 100%;
+  min-width: 1200px;
+  height: 140px;
+  background: #fff;
+  margin-bottom: 80px;
+}
+.list main {
+  width: 1200px;
+  height: 140px;
+  margin: 0 auto;
+}
+.list ul {
+  width: 100%;
+  height: 140px;
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  /* 12版 */
+  -webkit-box-align: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.list ul li {
+  width: 25%;
+  height: 110px;
+  margin-top: 15px;
+}
+.list ul li a {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.list ul li a .list-left {
+  width: 110px;
+  height: 110px;
+}
+.list ul li a .list-left img {
+  width: 110px;
+  height: 110px;
+  display: block;
+}
+.list ul li a .list-right {
+  flex-grow: 1;
+  height: 80px;
+  border-right: 1px solid #e2e2e2;
+  margin-top: 10px;
+}
+.list ul li a .list-right h3 {
+  font-size: 20px;
+  height: 20px;
+  line-height: 20px;
+  color: #333333;
+  margin-bottom: 8px;
+}
+.list ul li a .list-right p {
+  font-size: 12px;
+  color: #999999;
+  padding-right: 18px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.list ul li:last-child a .list-right {
+  border: 0;
+}
+/*平台分类从此结束*/
+/*行业痛点从此开始*/
+.pain {
+  width: 100%;
+  min-width: 1200px;
+  height: 280px;
+  background: url(../images/pain_bj_02.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 70px;
+}
+.pain h3 {
+  font-size: 30px;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.pain .content {
+  width: 450px;
+  height: 56px;
+  margin: 0 auto;
+  position: relative;
+}
+.pain .content span {
+  font-size: 52px;
+  color: #f9aa2d;
+  line-height: 52px;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  z-index: 300;
+}
+.pain .content .left {
+  left: 0;
+}
+.pain .content .reight {
+  right: 0;
+}
+.pain .content .text-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
+  height: 52px;
+  width: 90%;
+  overflow: hidden;
+}
+.pain .content .text-box li {
+  width: 100%;
+  text-align: center;
+  height: 52px;
+  font-size: 26px;
+  line-height: 52px;
+  color: #fff;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.pain .content .text-box li:first-child {
+  left: 0;
+}
+/*行业痛点从此结束*/
+/*服务从此开始*/
+.server {
+  width: 100%;
+  min-width: 1200px;
+  height: 704px;
+  background: url(../images/server_bj_02.jpg) no-repeat center center;
+  background-size: cover;
+}
+.server main {
+  width: 1200px;
+  padding-top: 110px;
+  margin: 0 auto;
+}
+.server main .product-box {
+  width: 100%;
+  height: 540px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  /*背景*/
+  /*处理盒子的hover效果*/
+  /*处理盒子hover后的背景*/
+}
+.server main .product-box li {
+  width: 368px;
+  height: 488px;
+  transition: all 0.15s;
+  border: 1px solid #d9d9d9;
+  margin-right: 45px ;
+}
+.server main .product-box li .product-top {
+  width: 100%;
+  height: 124px;
+  background: #f5f7fa;
+  padding: 0 44px;
+  padding-top: 30px;
+}
+.server main .product-box li .product-top .product-title {
+  font-size: 20px;
+  font-weight: 500;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 16px;
+  color: #000;
+  text-align: center;
+}
+.server main .product-box li .product-top p {
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+  color: #808080;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.server main .product-box li .product-buttom {
+  padding: 0 28px;
+  padding-top: 40px;
+}
+.server main .product-box li .product-buttom .product-list-box {
+  margin-bottom: 28px;
+}
+.server main .product-box li .product-buttom .product-list-box h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  height: 16px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.server main .product-box li .product-buttom .product-list-box p {
+  font-size: 12px;
+  line-height: 24px;
+  color: #a7a7a7;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.server main .product-box li:nth-child(3n) {
+  margin-right: 0;
+}
+.server main .product-box li:first-child {
+  background: url(../images/havc.jpg) no-repeat center center;
+  background-size: cover ;
+}
+.server main .product-box li:nth-child(2) {
+  background: url(../images/water_supply.jpg) no-repeat center center;
+  background-size: cover ;
+}
+.server main .product-box li:nth-child(3) {
+  background: url(../images/other.jpg) no-repeat center center;
+  background-size: cover ;
+}
+.server main .product-box .active {
+  transform: scale(1.1, 1.1);
+  border-color: #2277e6;
+  box-shadow: 0px 0px 12px 0px rgba(1, 104, 223, 0.3);
+}
+.server main .product-box .active .product-top {
+  background: #2277e6;
+  padding-top: 27px;
+}
+.server main .product-box .active .product-top .product-title {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+.server main .product-box .active .product-top p {
+  font-size: 10px;
+  text-align: center;
+  line-height: 16px;
+  color: #fff;
+}
+.server main .product-box .active .product-buttom {
+  padding-left: 40px;
+  padding-right: 0;
+  padding-top: 36px;
+}
+.server main .product-box .active .product-buttom .product-list-box {
+  margin-bottom: 25px;
+}
+.server main .product-box .active .product-buttom .product-list-box h4 {
+  font-size: 14px;
+  line-height: 14px;
+  height: 14px;
+  color: #000;
+  margin-bottom: 7px;
+}
+.server main .product-box .active .product-buttom .product-list-box p {
+  font-size: 10px;
+  line-height: 21px;
+}
+.server main .product-box .active:first-child {
+  background: url(../images/havc-hover.jpg) no-repeat center center;
+  background-size: cover ;
+}
+.server main .product-box .active:nth-child(2) {
+  background: url(../images/water_supply-hover.jpg) no-repeat center center;
+  background-size: cover ;
+}
+.server main .product-box .active:nth-child(3) {
+  background: url(../images/other-hover.jpg) no-repeat center center;
+  background-size: cover ;
+}
+/*服务从此结束*/
+/*方案从此开始*/
+.programme {
+  width: 100%;
+  min-width: 1200px;
+  height: 530px;
+  background: url(../images/beijing_02.jpg) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 100px;
+}
+.programme main {
+  width: 1200px;
+  height: 530px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 60px;
+}
+.programme main h3 {
+  font-size: 28px;
+  color: #fff;
+  line-height: 28px;
+  height: 28px;
+  margin-bottom: 16px;
+}
+.programme main p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+.programme main ul {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.programme main ul li {
+  width: 33.333%;
+  height: 288px;
+  position: relative;
+}
+.programme main ul li img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.programme main ul li .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #171e31;
+  opacity: 0.678;
+}
+.programme main ul li .mask-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  z-index: 200;
+}
+.programme main ul li .mask-content .mask-content-img {
+  width: 70px;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+  background: url(../images/programme_icon_03.png) no-repeat center center;
+  background-size: cover;
+}
+.programme main ul li .mask-content .mask-content-title {
+  font-size: 22px;
+  color: #fff;
+}
+.programme main ul li .hover {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding: 0 30px ;
+  transition: all 0.5s ;
+}
+.programme main ul li .hover .hover-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.programme main ul li .hover .hover-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 300;
+}
+.programme main ul li .hover .hover-content .title {
+  margin-top: 96px;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.programme main ul li .hover .hover-content .show {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  color: #fff;
+}
+/*server从此结束*/
+/*sertver 边框颜色*/
+.programme main .programme-box li:first-child .hover {
+  border-bottom: 4px solid #448aff;
+}
+.programme main .programme-box li:first-child .hover .hover-content {
+  border-top: 4px solid #448aff;
+}
+.programme main .programme-box li:first-child .hover .hover-mask {
+  background-color: #448aff;
+  opacity: 0.549;
+}
+.programme main .programme-box li:nth-child(2n) .hover {
+  border-bottom: 4px solid #1ed5b7;
+}
+.programme main .programme-box li:nth-child(2n) .hover .hover-content {
+  border-top: 4px solid #1ed5b7;
+}
+.programme main .programme-box li:nth-child(2n) .hover .hover-mask {
+  background-color: #1ed5b7;
+  opacity: 0.549;
+}
+.programme main .programme-box li:nth-child(3n) .hover {
+  border-bottom: 4px solid #fed387;
+}
+.programme main .programme-box li:nth-child(3n) .hover .hover-content {
+  border-top: 4px solid #fed387;
+}
+.programme main .programme-box li:nth-child(3n) .hover .hover-mask {
+  background-color: #fed387;
+  opacity: 0.549;
+}
+/*合作伙伴*/
+/*.cooperation{
+  width: 100%;
+  height: 494px;
+  background: #f2f2f4;
+  main{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 110px;
+    h3{
+      font-size: 28px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: 18px;
+      height: 18px;
+      line-height: 18px;
+      text-align: center;
+      margin-bottom: 76px;
+    }
+    .partner-box{
+      width: 100%;
+      display: -webkit-box;      !* OLD - iOS 6-, Safari 3.1-6 *!
+      display: -moz-box;         !* OLD - Firefox 19- (buggy but mostly works) *!
+      display: -ms-flexbox;      !* TWEENER - IE 10 *!
+      display: -webkit-flex;     !* NEW - Chrome *!
+      display: flex;             !* NEW, Spec - Opera 12.1, Firefox 20+ *!
+       li{
+         width: 175px;
+         height: 140px;
+         margin-right: 30px;
+         border: 1px solid #ccc;
+         a{
+           display: block;
+           img{
+             width: 173px;
+             height: 138px;
+             display: block;
+           }
+
+         }
+       }
+    }
+  }
+}*/
+/*合作伙伴从此结束*/
+/*底部从此开始*/
+footer {
+  width: 100%;
+  min-width: 1200px;
+  background: #2e3033;
+}
+footer main {
+  width: 1200px;
+  margin: 0 auto;
+  /*底部版权*/
+}
+footer main .footer-top {
+  width: 100%;
+  height: 222px;
+  padding-top: 40px;
+  padding-left: 55px;
+  padding-right: 47px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  /*关于我们*/
+}
+footer main .footer-top .footer-logo {
+  margin-right: 110px;
+}
+footer main .footer-top .footer-logo .footer-logo-top {
+  width: 134px;
+  height: 40px;
+  margin-bottom: 34px;
+}
+footer main .footer-top .footer-logo .footer-logo-top img {
+  width: 134px;
+  height: 40px;
+  display: block;
+}
+footer main .footer-top .footer-logo p {
+  font-size: 12px;
+  color: #fff;
+  line-height: 12px;
+  height: 12px;
+  margin-bottom: 12px;
+}
+footer main .footer-top .footer-logo .company-info {
+  width: 100%;
+  color: #fff;
+  line-height: 20px;
+  font-size: 12px;
+}
+footer main .footer-top .footer-about {
+  margin-right: 185px;
+}
+footer main .footer-top .footer-about h4 {
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  color: #fff;
+  margin-bottom: 38px;
+}
+footer main .footer-top .footer-about ul > li > a {
+  font-size: 12px;
+  line-height: 12px;
+  height: 12px;
+  color: #acadad;
+}
+footer main .footer-top .footer-about ul > li > .hover:hover {
+  color: #009df3;
+}
+footer main .footer-top .footer-about ul > li {
+  margin-bottom: 20px;
+}
+footer main .footer-top .footer-about:last-child {
+  margin-right: 0;
+}
+footer main .footer-buttom {
+  width: 100%;
+  height: 76px;
+}
+footer main .footer-buttom p {
+  padding-top: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-top: 1px solid #45484c;
+  font-size: 12px;
+  color: #cccccc;
+}
+/*返回顶部*/
+.top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 10px;
+  bottom: 60px;
+  display: none;
+}
+.top img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}

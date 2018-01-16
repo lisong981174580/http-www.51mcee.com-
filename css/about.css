@@ -1,0 +1,693 @@
+/*header从此开始*/
+header {
+  width: 100%;
+  min-width: 1200px;
+  height: 50px;
+  background: #1e2339;
+}
+header main {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 50px;
+}
+header main .header-left {
+  float: left;
+}
+header main .header-left .logo,
+header main .header-left .lg-title,
+header main .header-left .sm-title {
+  float: left;
+}
+header main .header-left .logo {
+  width: 106px;
+  height: 34px;
+  margin-top: 8px;
+  margin-right: 75px;
+}
+header main .header-left .logo img {
+  width: 106px;
+  height: 34px;
+  display: block;
+}
+header main .header-left .sm-title {
+  font-size: 14px;
+  color: #fff;
+}
+header main .header-right {
+  float: right;
+  width: 58px;
+  height: 28px;
+  border: 1px solid #4e525d;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 11px;
+  box-sizing: border-box;
+}
+header main .header-right a {
+  color: #f0f0f2;
+  font-size: 14px;
+}
+header main .header-right:hover {
+  background: #535761;
+}
+/*header从此结束*/
+/*导航从此开始*/
+nav {
+  width: 100%;
+  min-width: 1200px;
+  height: 62px;
+  background: #0d1039;
+  border-top: 1px solid #0d1039;
+}
+nav .index-nav {
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+}
+nav .index-nav li {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  padding: 0  20px;
+  box-sizing: border-box;
+  position: relative;
+}
+nav .index-nav li > a {
+  font-size: 14px;
+}
+nav .index-nav li .drop {
+  position: absolute;
+  z-index: 10;
+  height: auto;
+  width: 140px;
+  left: 0;
+  background: #171b2b;
+  overflow: hidden;
+  display: none;
+}
+nav .index-nav li .drop ol > li {
+  width: 100%;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  position: relative;
+}
+nav .index-nav li .drop ol > li .title-icon {
+  position: absolute;
+  left: 30px;
+  top: 12px;
+  width: 18px;
+  height: 18px;
+}
+nav .index-nav li .drop ol > li .title-icon .img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+nav .index-nav li .drop ol > li .title-icon .hover-img {
+  display: none;
+}
+nav .index-nav li .drop ol > li a {
+  font-size: 12px;
+  margin-left: 35px;
+}
+nav .index-nav li .drop ol > li:hover a {
+  color: #009df3;
+}
+nav .index-nav li a {
+  color: #fff;
+}
+nav .index-nav li:hover a:first-child {
+  color: #009df3;
+}
+/*导航从此结束*/
+/*app-banner从此开始*/
+.app-banner {
+  width: 100%;
+  min-width: 1200px;
+  height: 190px;
+  background: url(../images/about_banner_02.jpg) no-repeat center center;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+.app-banner main {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+.app-banner main .nav {
+  background-color: #ffffff;
+  position: absolute;
+  width: 458px;
+  height: 48px;
+  z-index: 16;
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-top: 12px;
+}
+.app-banner main .nav li {
+  width: 25%;
+  height: 24px;
+  border-right: 1px solid #e1e6f0;
+  float: left;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.app-banner main .nav li a {
+  width: 64px;
+  font-size: 14px;
+  color: #808080;
+  padding: 0 4px;
+  padding-bottom: 12px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 6px;
+  font-weight: 600;
+}
+.app-banner main .nav li:first-child a {
+  border-bottom: 2px solid #fbc000;
+  color: #333333;
+}
+/*滚动导航开始*/
+.app-download {
+  width: 100%;
+  min-width: 1200px;
+  height: 48px;
+  line-height: 48px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #fff;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+  z-index: 2000;
+  display: none;
+}
+.app-download .app-download-list {
+  width: 484px;
+  height: 48px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  z-index: 700;
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  /* 12版 */
+}
+.app-download .app-download-list li {
+  height: 32px;
+  margin-right: 86px;
+}
+.app-download .app-download-list li a {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 600;
+}
+.app-download .app-download-list li:last-child {
+  margin-right: 0;
+}
+.app-download .app-download-list li:hover {
+  border-bottom: 1px solid #2277e6;
+}
+.app-download .app-download-list li:hover a {
+  color: #2277e6;
+}
+/*滚动导航结束*/
+/*download从此开始*/
+.download {
+  width: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+}
+.download .app-download-content {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.download .app-download-content .title {
+  height: 18px;
+  margin-bottom: 26px;
+}
+.download .app-download-content .title .sanjiao {
+  width: 0;
+  height: 0;
+  border-top: 6px  solid  transparent;
+  border-right: 6px solid   transparent;
+  border-bottom: 6px  solid   transparent;
+  border-left: 6px  solid  #2277e6;
+  float: left;
+  margin-top: 4px;
+  margin-right: 3px;
+}
+.download .app-download-content .title .sm_title {
+  font-size: 18px;
+  height: 18px;
+  line-height: 18px;
+  color: #333333;
+  float: left;
+}
+.download .app-download-content p {
+  font-size: 14px;
+  color: #333;
+}
+/*产品优势从此开始*/
+.product-advantage {
+  width: 100%;
+  min-width: 1200px;
+}
+.product-advantage main {
+  width: 1200px;
+  margin: 0 auto;
+}
+.product-advantage main .title {
+  height: 18px;
+  margin-bottom: 110px;
+}
+.product-advantage main .title .sanjiao {
+  width: 0;
+  height: 0;
+  border-top: 6px  solid  transparent;
+  border-right: 6px solid   transparent;
+  border-bottom: 6px  solid   transparent;
+  border-left: 6px  solid  #2277e6;
+  float: left;
+  margin-top: 4px;
+  margin-right: 3px;
+}
+.product-advantage main .title .sm_title {
+  font-size: 18px;
+  height: 18px;
+  line-height: 18px;
+  color: #333333;
+  float: left;
+}
+.product-advantage main .Idea_box {
+  width: 100%;
+  height: 198px;
+}
+.product-advantage main .Idea_box li {
+  border-width: 1px;
+  border-color: #e6e6e6;
+  border-style: solid;
+  background-color: #ffffff;
+  width: 283px;
+  height: 198px;
+  padding: 0 20px;
+  padding-top: 76px;
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.product-advantage main .Idea_box li .tubiao {
+  width: 100px;
+  height: 103px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -50px;
+  z-index: 100;
+}
+.product-advantage main .Idea_box li .tubiao img {
+  width: 100px;
+  height: 103px;
+  display: block;
+}
+.product-advantage main .Idea_box li h4 {
+  font-size: 16px;
+  color: #333333;
+  text-align: center;
+  line-height: 16px;
+  height: 16px;
+  margin-bottom: 18px;
+}
+.product-advantage main .Idea_box li p {
+  font-size: 14px;
+  color: #808080;
+  text-align: center;
+  line-height: 30px;
+}
+.product-advantage main .Idea_box li:nth-child(4n) {
+  margin-right: 0;
+}
+/*产品功能从此开始*/
+.function {
+  width: 100%;
+  min-width: 1200px;
+  background: #fff;
+  margin-bottom: 77px;
+}
+.function main {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+.function main .title {
+  height: 18px;
+  margin-bottom: 30px;
+}
+.function main .title .sanjiao {
+  width: 0;
+  height: 0;
+  border-top: 6px  solid  transparent;
+  border-right: 6px solid   transparent;
+  border-bottom: 6px  solid   transparent;
+  border-left: 6px  solid  #2277e6;
+  float: left;
+  margin-top: 4px;
+  margin-right: 3px;
+}
+.function main .title .sm_title {
+  font-size: 18px;
+  height: 18px;
+  line-height: 18px;
+  color: #333333;
+  float: left;
+}
+.function main .content {
+  width: 100%;
+  height: auto;
+}
+.function main .content h3 {
+  font-size: 14px;
+  color: #2e2e2e;
+  line-height: 14px;
+  height: 14px;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+.function main .content .history_box {
+  width: 140px;
+  border-right: 1px dashed #e6e6e6;
+  padding-bottom: 100px;
+}
+.function main .content .history_box li {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 80px;
+  position: relative;
+  top: -10px;
+}
+.function main .content .history_box li .bookmark {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff9d3c;
+  opacity: 0.251;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  z-index: 20;
+}
+.function main .content .history_box li .bookmark_child {
+  border-radius: 50%;
+  background-color: #ff9d3c;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  z-index: 30;
+}
+.function main .content .history_box li .history_title {
+  font-size: 14px;
+  line-height: 20px;
+  height: 20px;
+  color: #2e2e2e;
+  text-align: right;
+  padding-right: 20px;
+}
+.function main .content .history_box li .history_content {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 163px;
+  width: 1026px;
+  height: 40px;
+  font-size: 14px;
+  color: #808080;
+  padding-left: 15px;
+  line-height: 40px;
+}
+.function main .content .history_box li .history_content .sanjiao {
+  position: absolute;
+  width: 6px;
+  height: 10px;
+  background: url(../images/sanjiao_03.jpg) no-repeat center center;
+  background-size: 6px;
+  left: -6px;
+  top: 15px;
+}
+.function main .content .history_box li:last-child {
+  margin-bottom: 0;
+}
+.function main .content .history_box li:last-child .history_content {
+  height: 70px;
+  line-height: 30px;
+  padding-top: 5px;
+  padding-right: 22px;
+}
+/*知识产权从此开始*/
+.power {
+  width: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+  background: #fff;
+}
+.power main {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.power main .title {
+  height: 18px;
+  margin-bottom: 48px;
+}
+.power main .title .sanjiao {
+  width: 0;
+  height: 0;
+  border-top: 6px  solid  transparent;
+  border-right: 6px solid   transparent;
+  border-bottom: 6px  solid   transparent;
+  border-left: 6px  solid  #2277e6;
+  float: left;
+  margin-top: 4px;
+  margin-right: 3px;
+}
+.power main .title .sm_title {
+  font-size: 18px;
+  height: 18px;
+  line-height: 18px;
+  color: #333333;
+  float: left;
+}
+.power main .certificate_box {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 100px;
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.power main .certificate_box li {
+  width: 266px;
+  height: 366px;
+  cursor: pointer;
+  margin-right: 42px;
+  margin-bottom: 42px;
+}
+.power main .certificate_box li img {
+  width: 266px;
+  height: 366px;
+  display: block;
+}
+.power main .certificate_box li img:nth-child(2) {
+  display: none;
+}
+.power main .certificate_box li:nth-child(4n) {
+  margin-right: 0;
+}
+/*弹框效果从此开始*/
+.about_alert {
+  display: none;
+}
+.about_alert .mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.502;
+  z-index: 800;
+}
+.about_alert .display_img {
+  width: 436px;
+  height: 600px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1000;
+  cursor: pointer;
+}
+.about_alert .display_img img {
+  width: 436px;
+  height: 600px;
+  display: block;
+}
+/*弹框效果从此结束*/
+/*底部从此开始*/
+footer {
+  width: 100%;
+  min-width: 1200px;
+  background: #2e3033;
+}
+footer main {
+  width: 1200px;
+  margin: 0 auto;
+  /*底部版权*/
+}
+footer main .footer-top {
+  width: 100%;
+  height: 222px;
+  padding-top: 40px;
+  padding-left: 55px;
+  padding-right: 47px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  /*关于我们*/
+}
+footer main .footer-top .footer-logo {
+  margin-right: 110px;
+}
+footer main .footer-top .footer-logo .footer-logo-top {
+  width: 134px;
+  height: 40px;
+  margin-bottom: 34px;
+}
+footer main .footer-top .footer-logo .footer-logo-top img {
+  width: 134px;
+  height: 40px;
+  display: block;
+}
+footer main .footer-top .footer-logo p {
+  font-size: 12px;
+  color: #fff;
+  line-height: 12px;
+  height: 12px;
+  margin-bottom: 12px;
+}
+footer main .footer-top .footer-logo .company-info {
+  width: 100%;
+  color: #fff;
+  line-height: 20px;
+  font-size: 12px;
+}
+footer main .footer-top .footer-about {
+  margin-right: 185px;
+}
+footer main .footer-top .footer-about h4 {
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  color: #fff;
+  margin-bottom: 38px;
+}
+footer main .footer-top .footer-about ul > li > a {
+  font-size: 12px;
+  line-height: 12px;
+  height: 12px;
+  color: #acadad;
+}
+footer main .footer-top .footer-about ul > li > .hover:hover {
+  color: #009df3;
+}
+footer main .footer-top .footer-about ul > li {
+  margin-bottom: 20px;
+}
+footer main .footer-top .footer-about:last-child {
+  margin-right: 0;
+}
+footer main .footer-buttom {
+  width: 100%;
+  height: 76px;
+}
+footer main .footer-buttom p {
+  padding-top: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-top: 1px solid #45484c;
+  font-size: 12px;
+  color: #cccccc;
+}
+/*返回顶部*/
+.top {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 10px;
+  bottom: 60px;
+  display: none;
+}
+.top img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}

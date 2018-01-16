@@ -1,0 +1,342 @@
+/*header从此开始*/
+header {
+  width: 100%;
+  min-width: 1200px;
+  height: 50px;
+  background: #1e2339;
+}
+header main {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  line-height: 50px;
+}
+header main .header-left {
+  float: left;
+}
+header main .header-left .logo,
+header main .header-left .lg-title,
+header main .header-left .sm-title {
+  float: left;
+}
+header main .header-left .logo {
+  width: 106px;
+  height: 34px;
+  margin-top: 8px;
+  margin-right: 75px;
+}
+header main .header-left .logo img {
+  width: 106px;
+  height: 34px;
+  display: block;
+}
+header main .header-left .sm-title {
+  font-size: 14px;
+  color: #fff;
+}
+header main .header-right {
+  float: right;
+  width: 58px;
+  height: 28px;
+  border: 1px solid #4e525d;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 11px;
+  box-sizing: border-box;
+}
+header main .header-right a {
+  color: #f0f0f2;
+  font-size: 14px;
+}
+header main .header-right:hover {
+  background: #535761;
+}
+/*header从此结束*/
+/*导航从此开始*/
+nav {
+  width: 100%;
+  min-width: 1200px;
+  height: 62px;
+  background: #0d1039;
+  border-top: 1px solid #0d1039;
+}
+nav .index-nav {
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+}
+nav .index-nav li {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  padding: 0  20px;
+  box-sizing: border-box;
+  position: relative;
+}
+nav .index-nav li > a {
+  font-size: 14px;
+}
+nav .index-nav li .drop {
+  position: absolute;
+  z-index: 10;
+  height: auto;
+  width: 140px;
+  left: 0;
+  background: #171b2b;
+  overflow: hidden;
+  display: none;
+}
+nav .index-nav li .drop ol > li {
+  width: 100%;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  position: relative;
+}
+nav .index-nav li .drop ol > li .title-icon {
+  position: absolute;
+  left: 30px;
+  top: 12px;
+  width: 18px;
+  height: 18px;
+}
+nav .index-nav li .drop ol > li .title-icon .img {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+nav .index-nav li .drop ol > li .title-icon .hover-img {
+  display: none;
+}
+nav .index-nav li .drop ol > li a {
+  font-size: 12px;
+  margin-left: 35px;
+}
+nav .index-nav li .drop ol > li:hover a {
+  color: #009df3;
+}
+nav .index-nav li a {
+  color: #fff;
+}
+nav .index-nav li:hover a:first-child {
+  color: #009df3;
+}
+/*导航从此结束*/
+/*解决方案内容从此开始*/
+.programme_content {
+  width: 100%;
+  height: 900px;
+}
+.programme_content main {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.programme_content main .content_left {
+  width: 230px;
+  height: 100%;
+  background: #fafbfc;
+  flex-shrink: 0;
+  border: 1px solid #e6e6e6;
+}
+.programme_content main .content_left h3 {
+  text-align: center;
+  height: 58px;
+  line-height: 58px;
+  border-bottom: 1px solid #2277e6;
+  font-size: 18px;
+  color: #333333;
+}
+.programme_content main .content_left ul {
+  width: 100%;
+  height: auto;
+}
+.programme_content main .content_left ul > li {
+  padding-top: 30px;
+  padding-left: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  padding-right: 20px;
+}
+.programme_content main .content_left ul > li .title {
+  height: 18px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.programme_content main .content_left ul > li .title .title_icon {
+  width: 19px;
+  height: 18px;
+  margin-right: 8px;
+  float: left;
+}
+.programme_content main .content_left ul > li .title .title_icon img {
+  width: 19px;
+  height: 18px;
+  display: block;
+}
+.programme_content main .content_left ul > li .title span {
+  width: 100px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 14px ;
+  float: left;
+}
+.programme_content main .content_left ul > li .title .jiantou {
+  width: 11px;
+  height: 6px;
+  background: url(../images/jiantou_03.png) no-repeat center center;
+  background-size: 11px;
+  margin-top: 7px;
+  float: right;
+}
+.programme_content main .content_left ul > li ol {
+  width: 100%;
+  height: auto;
+}
+.programme_content main .content_left ul > li ol li {
+  height: 14px;
+  line-height: 14px;
+  margin-bottom: 18px;
+  padding-left: 10px;
+}
+.programme_content main .content_left ul > li ol li .li_style {
+  width: 8px;
+  height: 8px;
+  background: url(../images/li_style_03.jpg) no-repeat center center;
+  background-size: cover;
+  float: left;
+  margin-top: 2px;
+  margin-right: 9px;
+  opacity: 0;
+}
+.programme_content main .content_left ul > li ol li a {
+  font-size: 12px;
+  color: #666 ;
+  float: left;
+}
+.programme_content main .content_left ul > li ol li:last-child {
+  margin-bottom: 30px;
+}
+.programme_content main .content_left ul > li:last-child {
+  border-bottom: 0;
+}
+.programme_content main .content_left ul > li:first-child ol li:first-child .li_style {
+  opacity: 1;
+}
+.programme_content main .content_left ul > li:first-child ol li:first-child a {
+  color: #2277e6;
+}
+.programme_content main .content_reight {
+  width: 970px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  border: 0;
+  height: 100%;
+}
+/*解决方案内容从此结束*/
+/*底部从此开始*/
+footer {
+  width: 100%;
+  min-width: 1200px;
+  background: #2e3033;
+}
+footer main {
+  width: 1200px;
+  margin: 0 auto;
+  /*底部版权*/
+}
+footer main .footer-top {
+  width: 100%;
+  height: 222px;
+  padding-top: 40px;
+  padding-left: 55px;
+  padding-right: 47px;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  /*关于我们*/
+}
+footer main .footer-top .footer-logo {
+  margin-right: 110px;
+}
+footer main .footer-top .footer-logo .footer-logo-top {
+  width: 134px;
+  height: 40px;
+  margin-bottom: 34px;
+}
+footer main .footer-top .footer-logo .footer-logo-top img {
+  width: 134px;
+  height: 40px;
+  display: block;
+}
+footer main .footer-top .footer-logo p {
+  font-size: 12px;
+  color: #fff;
+  line-height: 12px;
+  height: 12px;
+  margin-bottom: 12px;
+}
+footer main .footer-top .footer-logo .company-info {
+  width: 100%;
+  color: #fff;
+  line-height: 20px;
+  font-size: 12px;
+}
+footer main .footer-top .footer-about {
+  margin-right: 185px;
+}
+footer main .footer-top .footer-about h4 {
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  color: #fff;
+  margin-bottom: 38px;
+}
+footer main .footer-top .footer-about ul > li > a {
+  font-size: 12px;
+  line-height: 12px;
+  height: 12px;
+  color: #acadad;
+}
+footer main .footer-top .footer-about ul > li > .hover:hover {
+  color: #009df3;
+}
+footer main .footer-top .footer-about ul > li {
+  margin-bottom: 20px;
+}
+footer main .footer-top .footer-about:last-child {
+  margin-right: 0;
+}
+footer main .footer-buttom {
+  width: 100%;
+  height: 76px;
+}
+footer main .footer-buttom p {
+  padding-top: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-top: 1px solid #45484c;
+  font-size: 12px;
+  color: #cccccc;
+}

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>app页</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+<!--header从此开始-->
+<header>
+    <main>
+        <div class="header-left">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <span class="sm-title">机电设施物联服务平台</span>
+        </div>
+        <!--  <div class="header-right">
+              <a href=""  > 登录</a>
+          </div>-->
+    </main>
+</header>
+<!--header从此结束-->
+<!--导航从此开始-->
+<nav>
+    <ul class="index-nav">
+        <li>
+            <a href="index.html" >首页</a>
+            <!--以下   <div class="drop"></div>   代码若后台不用  宁留空也不要删除-->
+            <div class="drop"></div>
+            <!--以上   <div class="drop"></div>   代码若后台不用  宁留空也不要删除-->
+        </li>
+
+        <!--后台加数据部分-->
+        <li>
+            <a href="">产品</a>
+            <div class="drop">
+                <ol>
+                    <!--title-->
+                    <li class="title">河洛云软件</li>
+
+                    <li class="lis">
+                            <span class="title-icon">
+                                <img   class="img"  src="images/mcc_icon.png" alt="">
+                                <img   class="hover-img"   src="images/mcc_hover.png" alt="">
+                            </span>
+                        <a href="app.html" > 机电物联</a>
+                    </li>
+                </ol>
+                <ol>
+                    <!--title-->
+                    <li class="title">河洛云硬件产品</li>
+
+                    <li  class="lis">
+                            <span class="title-icon">
+                                <img class="img" src="images/e_box.png" alt="">
+                                <img class="hover-img" src="images/e_box_hover.png" alt="" >
+                            </span>
+                        <a href="ebox.html" >e-box</a>
+                    </li>
+                </ol>
+            </div>
+
+        </li>
+
+        <!-- <li>
+             <a href="">服务</a>
+             <div class="drop">
+                 <ol>
+                     &lt;!&ndash;title&ndash;&gt;
+                     <li class="title">河洛云软件</li>
+
+                     <li class="lis">
+                             <span class="title-icon">
+                                 <img   class="img"  src="images/mcee_01.gif" alt="">
+                                 <img   class="hover-img"   src="images/mcee_03.gif" alt="">
+                             </span>
+                         <a href=""> 机电物联</a>
+                     </li>
+                 </ol>
+                 <ol>
+                     &lt;!&ndash;title&ndash;&gt;
+                     <li class="title">河洛云硬件产品</li>
+
+                     <li  class="lis">
+                             <span class="title-icon">
+                                 <img class="img" src="images/ebox_01.gif" alt="">
+                                 <img class="hover-img" src="images/ebox_02.gif" alt="" >
+                             </span>
+                         <a href="">e-box</a>
+                     </li>
+                 </ol>
+             </div>
+
+         </li>-->
+
+        <li>
+            <a href="programme.html" >解决方案</a>
+            <div class="drop">
+                <!--   <ol>
+                       &lt;!&ndash;title&ndash;&gt;
+                       <li class="title">河洛云软件</li>
+
+                       <li class="lis">
+                               <span class="title-icon">
+                                   <img   class="img"  src="images/mcee_01.gif" alt="">
+                                   <img   class="hover-img"   src="images/mcee_03.gif" alt="">
+                               </span>
+                           <a href=""> 机电物联</a>
+                       </li>
+                   </ol>
+                   <ol>
+                       &lt;!&ndash;title&ndash;&gt;
+                       <li class="title">河洛云硬件产品</li>
+
+                       <li  class="lis">
+                               <span class="title-icon">
+                                   <img class="img" src="images/ebox_01.gif" alt="">
+                                   <img class="hover-img" src="images/ebox_02.gif" alt="" >
+                               </span>
+                           <a href="">e-box</a>
+                       </li>
+                   </ol>-->
+            </div>
+
+        </li>
+
+        <!-- <li>
+             <a href="">优秀案例</a>
+             <div class="drop">
+                 <ol>
+                     &lt;!&ndash;title&ndash;&gt;
+                     <li class="title">河洛云软件</li>
+
+                     <li class="lis">
+                             <span class="title-icon">
+                                 <img   class="img"  src="images/mcee_01.gif" alt="">
+                                 <img   class="hover-img"   src="images/mcee_03.gif" alt="">
+                             </span>
+                         <a href=""> 机电物联</a>
+                     </li>
+                 </ol>
+                 <ol>
+                     &lt;!&ndash;title&ndash;&gt;
+                     <li class="title">河洛云硬件产品</li>
+
+                     <li  class="lis">
+                             <span class="title-icon">
+                                 <img class="img" src="images/ebox_01.gif" alt="">
+                                 <img class="hover-img" src="images/ebox_02.gif" alt="" >
+                             </span>
+                         <a href="">e-box</a>
+                     </li>
+                 </ol>
+             </div>
+
+         </li>-->
+
+        <!--  <li>
+              <a href="demand.html" target="_blank">提交需求</a>
+              &lt;!&ndash;以下   <div class="drop"></div>   代码若后台不用  宁留空也不要删除&ndash;&gt;
+              <div class="drop" ></div>
+              &lt;!&ndash;以上   <div class="drop"></div>   代码若后台不用  宁留空也不要删除&ndash;&gt;
+          </li>-->
+
+        <li>
+            <a href="about.html" >关于我们</a>
+            <div class="drop">
+                <!--  <ol>
+                      &lt;!&ndash;title&ndash;&gt;
+                      <li class="title">河洛云软件</li>
+
+                      <li class="lis">
+                              <span class="title-icon">
+                                  <img   class="img"  src="images/mcee_01.gif" alt="">
+                                  <img   class="hover-img"   src="images/mcee_03.gif" alt="">
+                              </span>
+                          <a href=""> 机电物联</a>
+                      </li>
+                  </ol>
+                  <ol>
+                      &lt;!&ndash;title&ndash;&gt;
+                      <li class="title">河洛云硬件产品</li>
+
+                      <li  class="lis">
+                              <span class="title-icon">
+                                  <img class="img" src="images/ebox_01.gif" alt="">
+                                  <img class="hover-img" src="images/ebox_02.gif" alt="" >
+                              </span>
+                          <a href="">e-box</a>
+                      </li>
+                  </ol>-->
+            </div>
+        </li>
+    </ul>
+</nav>
+<!--导航从此结束-->
+
+<!--app-banner描述从此开始-->
+<section class="app-banner">
+    <main>
+        <div class="app-banner-content">
+            <ul class="app-content-left">
+                <div class="app-banner-title">
+                    <div class="app-logo">
+                        <img src="images/app_logo.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        机电物联
+                    </div>
+                </div>
+               <li><span>•</span> 机电物联是一款赋予机电设施数字化能力的专业服务APP</li>
+               <li><span>•</span> 全国首款多品类机电设施管理APP</li>
+               <li><span>•</span> 全国首款利用云+网+端的机电设施服务平台</li>
+               <li><span>•</span> 全国首款能够实时在线进行机电设施运行数据分析的服务平台</li>
+
+            </ul>
+            <div class="app-content-reight">
+                <img src="images/app_banner_03.jpg" alt="">
+            </div>
+        </div>
+    </main>
+</section>
+<!--app描述从此结束-->
+
+<div class="app-download">
+    <ul class="app-download-list">
+        <li><a href="#fuction">产品功能</a></li>
+        <li><a href="#advantage">产品优势</a></li>
+        <li><a href="#download">下载版本</a></li>
+    </ul>
+</div>
+
+<!--产品功能从此开始-->
+<a name="fuction"></a>
+<section class="function">
+    <main>
+        <h3>产品功能</h3>
+        <ul class="function-box">
+            <li>
+                <div class="function-img">
+                    <img src="images/fuction_03.jpg" alt="">
+                </div>
+
+                <p>
+                    异常实时报警
+                </p>
+            </li>
+            <li>
+                <div class="function-img">
+                    <img src="images/fuction_15.jpg" alt="">
+                </div>
+
+                <p>
+                    数据实时监测
+                </p>
+            </li>
+            <li>
+                <div class="function-img">
+                    <img src="images/fuction_12.jpg" alt="">
+                </div>
+
+                <p>
+                    设备远程管理
+                </p>
+            </li>
+            <li>
+                <div class="function-img">
+                    <img src="images/fuction_05.jpg" alt="">
+                </div>
+                <p>
+                    远程实时控制
+                </p>
+            </li>
+            <li>
+                <div class="function-img">
+                    <img src="images/fuction_07.jpg" alt="">
+                </div>
+
+                <p>
+                    智能化策略运行
+                </p>
+            </li>
+
+
+        </ul>
+    </main>
+</section>
+<!--产品功能从此结束-->
+
+<!--产品优势从此开始-->
+<a name="advantage"></a>
+<section class="product-advantage">
+    <main>
+       <h3>产品优势</h3>
+        <p>对机电设施进行数字化、智能化、精准化、按需化的管理升级</p>
+        <ul class="product-advantage-box">
+            <li>
+                <div class="advantage-list">
+                    <img src="images/advantage_03.jpg" alt="">
+                </div>
+                 <p>降低机电设施运行风险</p>
+            </li>
+            <li>
+                <div class="advantage-list">
+                    <img src="images/advantage_05.jpg" alt="">
+                </div>
+                <p>降低机电设施人力成本</p>
+            </li>
+            <li>
+                <div class="advantage-list">
+                    <img src="images/advantage_07.jpg" alt="">
+                </div>
+                <p>提高机电设施管理效能</p>
+            </li>
+            <li>
+                <div class="advantage-list">
+                    <img src="images/advantage_12.jpg" alt="">
+                </div>
+                <p>提高用户机电设施的管理节能水平</p>
+            </li>
+
+        </ul>
+    </main>
+</section>
+<!--产品优势从此结束-->
+
+
+
+<!--app下载从此开始-->
+<section class="download">
+    <a name="download"></a>
+    <div class="app-download-content">
+        <h3>下载版本</h3>
+        <ul class="app-download-content-box">
+            <li >
+                <div class="app-img">
+                    <img src="images/app_ios.jpg" alt="">
+                </div>
+                <h4>ios版本</h4>
+                <div class="app-bottom   ios-bottom">
+                    立即下载
+                </div>
+            </li>
+            <li >
+                <div class="app-img">
+                    <img src="images/app_android.jpg" alt="">
+                </div>
+                <h4>Android版本</h4>
+                <div class="app-bottom  android-bottom">
+                    立即下载
+                </div>
+            </li>
+
+
+
+            <div class="download-line">
+                <img src="images/d_line.jpg" alt="">
+            </div>
+        </ul>
+
+    </div>
+</section>
+<!--app下载从此结束-->
+
+<!--下载弹框-->
+<section class="alert-ios">
+    <div class="body-mask"></div>
+    <div class="bomb-box">
+        <div class="gradient">
+            <div class="cancel cancel_ios">
+                <div class="cancel_img"></div>
+            </div>
+        </div>
+        <div class="qr_code">
+            <img src="images/app_ioscode.jpg" alt="">
+        </div>
+        <h4>扫描二维码，下载机电物联ios版本</h4>
+    </div>
+</section>
+
+<section class="alert-android">
+    <div class="body-mask"></div>
+    <div class="bomb-box">
+        <div class="gradient">
+            <div class="cancel  cancel_android">
+                 <div class="cancel_img"></div>
+            </div>
+        </div>
+        <div class="qr_code">
+            <img src="images/app_androidcode.jpg" alt="">
+        </div>
+        <h4>扫描二维码，下载机电物联Android版本</h4>
+    </div>
+</section>
+
+
+<!--底部从此开始-->
+<footer>
+    <main>
+        <div class="footer-top">
+            <!--带logo处 左边-->
+            <div class="footer-logo">
+
+                <div class="footer-logo-top">
+                    <img src="images/logo_footer.png" alt="">
+                </div>
+
+                <p>杭州河洛章纹互联技术有限公司</p>
+                <p class="company-info">
+                    浙江省杭州市西湖区文二西路5号（元茂大厦副楼）<br>
+                    1016-1017室
+                </p>
+
+            </div>
+
+
+
+            <!--关于我们-->
+            <div class="footer-about">
+                <h4>关于我们</h4>
+                <ul>
+                    <li><a href="about.html" class="hover">公司简介</a></li>
+                </ul>
+            </div>
+
+
+            <!--产品与服务-->
+
+            <div class="footer-about">
+                <h4>产品与服务</h4>
+                <ul>
+                    <li><a href="app.html" class="hover">机电物联</a></li>
+                    <li><a href="ebox.html" class="hover">E-BOX</a></li>
+                    <li><a href="javascript:;">MCEE物联服务平台</a></li>
+                </ul>
+            </div>
+
+
+
+            <!--合作交流从此开始-->
+            <div class="footer-about">
+                <h4>联系我们</h4>
+                <ul>
+                    <li><a href="javascript: ;">电话：0571-87396090</a></li>
+                    <li><a href="javascript: ;">邮编：310000</a></li>
+                    <li><a href="javascript: ;">邮箱：operation@51mcee.com</a></li>
+
+                </ul>
+            </div>
+
+
+        </div>
+
+        <!--底部版权-->
+        <div class="footer-buttom">
+            <p>
+                浙ICP备17039695号-1 <br>
+                Copyright©2017 Heluo Zhangwen.All Rights Reserved.  杭州河洛章纹互联技术有限公司   版权所有
+            </p>
+
+        </div>
+    </main>
+</footer>
+
+<!--返回顶部-->
+<div class="top">
+    <a href="#">
+        <img src="images/top.png" alt="">
+    </a>
+</div>
+
+
+</body>
+</html>

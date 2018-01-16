@@ -1,0 +1,427 @@
+/*header从此开始*/
+header{
+  width: 100%;
+  min-width: 1200px;
+  height: 50px;
+  background: #1e2339;
+
+  main{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 50px;
+    .header-left{
+      float: left;
+      .logo,.lg-title,.sm-title{
+        float: left;
+      }
+      .logo{
+        width: 106px;
+        height: 34px;
+        margin-top: 8px;
+        margin-right: 75px;
+        img{
+          width: 106px;
+          height: 34px;
+          display: block;
+        }
+      }
+
+      .sm-title{
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+    .header-right{
+      float: right;
+      width: 58px;
+      height: 28px;
+      border: 1px solid #4e525d;
+      line-height: 28px;
+      text-align: center;
+      margin-top: 11px;
+      box-sizing: border-box;
+      a{
+        color: #f0f0f2;
+        font-size: 14px;
+      }
+    }
+
+    .header-right:hover{
+      background: #535761;
+    }
+  }
+}
+/*header从此结束*/
+/*导航从此开始*/
+nav{
+  width: 100%;
+  min-width: 1200px;
+  height: 62px;
+  background: #0d1039;
+  border-top: 1px solid #0d1039;
+  .index-nav{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    li{
+      float: left;
+      height: 60px;
+      line-height: 60px;
+      padding: 0  20px;
+      box-sizing: border-box;
+      position: relative;
+      >a{
+        font-size: 14px;
+      }
+      .drop{
+        position: absolute;
+        z-index: 10;
+        height: auto;
+        width: 140px;
+        left: 0;
+        background: #171b2b;
+        overflow: hidden;
+        display: none;
+        ol>li{
+          width: 100%;
+          color: #fff;
+          height: 40px;
+          line-height: 40px;
+          font-size: 12px;
+          position: relative;
+          .title-icon{
+            position: absolute;
+            left: 30px;
+            top:12px;
+            width: 18px;
+            height: 18px;
+            .img{
+              display: block;
+              width: 18px;
+              height: 18px;
+            }
+            .hover-img{
+              display: none;
+            }
+          }
+          a{
+            font-size: 12px;
+            margin-left: 35px;
+          }
+        }
+        ol>li:hover a{
+          color: rgb(0, 157, 243);
+        }
+      }
+      a{
+        color: #fff;
+      }
+    }
+    li:hover a:first-child{
+      color: rgb(0, 157, 243);
+    }
+  }
+}
+/*导航从此结束*/
+
+
+/*ebox-banner从此开始*/
+.app-banner{
+  width: 100%;
+  min-width: 1200px;
+  height: 492px;
+  main{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+
+    .app-banner-title{
+      height: 50px;
+      margin-bottom: 40px;
+      .app-logo{
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-right: 10px;
+        img{
+          width: 50px;
+          height: 50px;
+          display: block;
+        }
+      }
+      .title{
+        height: 50px;
+        line-height: 50px;
+        float: left;
+        font-size: 40px;
+        font-weight: 500;
+        color: #333;
+      }
+    }
+
+    .app-banner-content{
+      width: 100%;
+      .app-content-left{
+        width: 556px;
+        padding-top: 20px;
+        float: left;
+        margin-right: 29px;
+        p{
+          width: 100%;
+          font-size: 14px;
+          color: rgb(51, 51, 51);
+          line-height: 32px;
+          text-indent: 2em;
+          text-align: justify;
+          position: relative;
+          .p_icon{
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            left: 0;
+            top: 8px;
+            background: url(../images/p_icon_03.png) no-repeat center center;
+            background-size: 16px;
+          }
+        }
+
+      }
+
+      .app-content-reight{
+        width: 615px;
+        height: 285px;
+        float: left;
+        img{
+          width: 615px;
+          height: 285px;
+          display: block;
+        }
+
+      }
+
+    }
+
+  }
+}
+/*ebox-banner从此结束*/
+
+/*ebox产品特点从此开始 导航部分*/
+.characteristic{
+  width: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+  background: #fafafa;
+
+
+  /*ebox产品特点内容从此开始 */
+  .app-download-content{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+
+    h3{
+      font-size: 26px;
+      height: 26px;
+      line-height: 26px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 78px;
+    }
+
+    .Characteristic_box{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      li{
+        width: 270px;
+        height: 380px;
+        float: left;
+        margin-right: 40px;
+        margin-bottom: 100px;
+        padding: 0 28px;
+        padding-top: 30px;
+        background: #fff;
+        .img{
+          width: 136px;
+          height: 136px;
+          margin: 0 auto;
+          margin-bottom: 36px;
+          img{
+            width: 136px;
+            height: 136px;
+            display: block;
+          }
+        }
+
+        p{
+          font-size: 14px;
+          line-height: 30px;
+          color: #333333;
+        }
+      }
+      li:last-child{
+        margin-right: 0;
+      }
+    }
+
+
+
+  }
+
+}
+
+/*ebox产品型号从此开始*/
+.product-model{
+  width: 100%;
+  min-width: 1200px;
+  background: #fff;
+
+  main{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+    h3{
+      font-size: 26px;
+      height: 26px;
+      line-height: 26px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 88px;
+    }
+
+    .ring{
+      width: 767px;
+      height: 328px;
+      margin: 0 auto;
+      margin-bottom: 87px;
+      img{
+        width: 767px;
+        height: 328px;
+        display: block;
+      }
+    }
+
+  }
+}
+
+
+/*底部从此开始*/
+footer{
+  width: 100%;
+  min-width: 1200px;
+  background: #2e3033;
+  main{
+    width: 1200px;
+    margin: 0 auto;
+    .footer-top{
+      width: 100%;
+      height: 222px;
+      padding-top: 40px;
+      padding-left: 55px;
+      padding-right: 47px;
+      display: flex;
+      display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -webkit-flex;     /* NEW - Chrome */
+      display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      justify-content: space-between;
+      .footer-logo{
+        margin-right: 110px;
+        .footer-logo-top{
+          width: 134px;
+          height: 40px;
+          margin-bottom: 34px;
+
+          img{
+            width: 134px;
+            height: 40px;
+            display: block;
+          }
+
+        }
+
+        p{
+          font-size: 12px;
+          color: #fff;
+          line-height: 12px;
+          height: 12px;
+          margin-bottom: 12px;
+        }
+        .company-info{
+          width: 100%;
+          color: #fff;
+          line-height: 20px;
+          font-size: 12px;
+        }
+
+
+      }
+      /*关于我们*/
+      .footer-about{
+        margin-right: 185px;
+        h4{
+          font-size: 14px;
+          height: 14px;
+          line-height: 14px;
+          color: #fff;
+          margin-bottom: 38px;
+        }
+        ul>li>a{
+          font-size: 12px;
+          line-height: 12px;
+          height: 12px;
+          color: #acadad;
+        }
+
+        ul>li> .hover:hover{
+          color: #009df3;
+        }
+        ul>li{
+          margin-bottom: 20px;
+        }
+      }
+
+      .footer-about:last-child{
+        margin-right: 0;
+      }
+    }
+    /*底部版权*/
+    .footer-buttom{
+      width: 100%;
+      height: 76px;
+
+      p{
+        padding-top: 20px;
+        line-height: 20px;
+        text-align: center;
+        border-top: 1px solid #45484c;
+        font-size: 12px;
+        color: #cccccc;
+      }
+
+    }
+  }
+}
+
+
+/*返回顶部*/
+.top{
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 10px;
+  bottom: 60px;
+  display: none;
+  img{
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+}
